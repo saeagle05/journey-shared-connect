@@ -12,7 +12,7 @@ export const translations = {
 
     // Navigation
     home: 'Home',
-    search: 'Find a Ride',
+    findRide: 'Find a Ride',
     createTrip: 'Offer a Ride',
     profile: 'Profile',
     login: 'Login',
@@ -21,7 +21,7 @@ export const translations = {
     // Buttons
     submit: 'Submit',
     cancel: 'Cancel',
-    search: 'Search',
+    searchBtn: 'Search',
     requestRide: 'Request to Join',
     publishRide: 'Publish Ride',
     
@@ -88,7 +88,7 @@ export const translations = {
 
     // Navigation
     home: 'الرئيسية',
-    search: 'ابحث عن رحلة',
+    findRide: 'ابحث عن رحلة',
     createTrip: 'اعرض رحلة',
     profile: 'الملف الشخصي',
     login: 'تسجيل الدخول',
@@ -97,7 +97,7 @@ export const translations = {
     // Buttons
     submit: 'إرسال',
     cancel: 'إلغاء',
-    search: 'بحث',
+    searchBtn: 'بحث',
     requestRide: 'طلب الانضمام',
     publishRide: 'نشر الرحلة',
     
@@ -168,7 +168,7 @@ export const getCurrentLanguage = (): Language => currentLanguage;
 export const setLanguage = (lang: Language): void => {
   currentLanguage = lang;
   // You could add code here to persist the language choice
-  // localStorage.setItem('language', lang);
+  localStorage.setItem('language', lang);
   
   // If the app supports RTL for Arabic, you might add logic here to update the document direction
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -183,19 +183,15 @@ export const t = (key: keyof typeof translations.en): string => {
 
 // Initialize from saved preference if available
 export const initializeLanguage = (): void => {
-  // Uncomment to use browser language detection
-  /*
+  // Use browser language detection
   const browserLang = navigator.language.substring(0, 2);
   if (browserLang === 'ar') {
     setLanguage('ar');
   }
-  */
   
   // Or initialize from localStorage if previously saved
-  /*
   const savedLang = localStorage.getItem('language') as Language;
   if (savedLang && (savedLang === 'en' || savedLang === 'ar')) {
     setLanguage(savedLang);
   }
-  */
 };
