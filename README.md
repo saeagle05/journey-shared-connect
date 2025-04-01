@@ -1,73 +1,115 @@
-# Welcome to your Lovable project
 
-## Project info
+# Ride With Me 🚗
 
-**URL**: https://lovable.dev/projects/484c297e-7d90-43f8-b9e0-bd2a385b3a04
+## Project Overview
 
-## How can I edit this code?
+**Ride With Me** is a free community-based ride-sharing platform that connects drivers and passengers. Our mission is to make transportation accessible to everyone while reducing environmental impact through shared journeys.
 
-There are several ways of editing your application.
+![Ride With Me Logo](public/placeholder.svg)
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/484c297e-7d90-43f8-b9e0-bd2a385b3a04) and start prompting.
+### For Drivers
+- Create and manage ride offers
+- Specify available seats and trip details
+- Real-time location tracking
+- Safety verification and ratings
 
-Changes made via Lovable will be committed automatically to this repo.
+### For Passengers
+- Search for available rides by destination
+- Connect with drivers going your way
+- Track driver location in real-time
+- Safety features and driver ratings
 
-**Use your preferred IDE**
+### Key Benefits
+- Free to use platform (supported by partnerships and advertising)
+- Reduced carbon footprint through ride sharing
+- Community building and social connections
+- Accessibility options for diverse user needs
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Demo
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Visit our live demo: [Ride With Me Demo](https://lovable.dev/projects/484c297e-7d90-43f8-b9e0-bd2a385b3a04)
 
-Follow these steps:
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16.0.0 or later)
+- npm (v7.0.0 or later)
+
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/yourusername/ride-with-me.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd ride-with-me
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will start at `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+ride-with-me/
+├── public/             # Static files
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions and constants
+│   ├── pages/          # Page components
+│   └── main.tsx        # Application entry point
+└── README.md           # Project documentation
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Technology Stack
 
-## What technologies are used for this project?
+- **React**: Frontend UI library
+- **TypeScript**: Static typing
+- **Vite**: Build tool
+- **TailwindCSS**: Utility-first CSS framework
+- **Shadcn-UI**: Component library
+- **Lucide React**: Icon library
+- **React Router**: Navigation
+- **Tanstack Query**: Data fetching & state management
 
-This project is built with:
+## Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+We welcome contributions! Please follow these steps:
 
-## How can I deploy this project?
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Simply open [Lovable](https://lovable.dev/projects/484c297e-7d90-43f8-b9e0-bd2a385b3a04) and click on Share -> Publish.
+## Environmental Impact
 
-## Can I connect a custom domain to my Lovable project?
+By choosing to ride-share:
+- Reduce carbon emissions
+- Decrease traffic congestion
+- Lower the demand for parking spaces
+- Build a more sustainable transportation ecosystem
 
-Yes it is!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Contact
+
+Project Link: [https://github.com/yourusername/ride-with-me](https://github.com/yourusername/ride-with-me)
+
+## Acknowledgements
+
+- [Lovable](https://lovable.dev) - AI development platform
+- [React](https://reactjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Shadcn UI](https://ui.shadcn.com)
