@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -7,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format } from "date-fns";
-import { Calendar as CalendarIcon, Search, MapPin, User, Star, Car, Wheelchair } from "lucide-react";
+import { Calendar as CalendarIcon, Search, MapPin, User, Star, Car, Accessibility } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const SearchPage = () => {
@@ -132,7 +131,7 @@ const SearchPage = () => {
               
               <div className="mt-6 flex flex-wrap gap-2">
                 <Button variant="outline" size="sm" className="text-xs">
-                  <Wheelchair className="mr-1 h-3 w-3" />
+                  <Accessibility className="mr-1 h-3 w-3" />
                   Wheelchair accessible
                 </Button>
                 <Button variant="outline" size="sm" className="text-xs">

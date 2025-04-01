@@ -1,10 +1,10 @@
-
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { User, Star, Car, Calendar, MapPin, MessageCircle, Shield } from "lucide-react";
+import { Input } from "@/components/ui/input";
 
 const ProfilePage = () => {
   return (
@@ -354,19 +354,35 @@ const ProfilePage = () => {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                          <Input defaultValue="John Doe" className="ride-input" />
+                          <Input 
+                            className="mt-1 w-full" 
+                            type="text" 
+                            defaultValue="John Doe" 
+                          />
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                          <Input defaultValue="john@example.com" className="ride-input" />
+                          <Input 
+                            className="mt-1 w-full" 
+                            type="email" 
+                            defaultValue="john.doe@example.com" 
+                          />
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-                          <Input defaultValue="+1 555-123-4567" className="ride-input" />
+                          <Input 
+                            className="mt-1 w-full" 
+                            type="tel" 
+                            defaultValue="+1 (555) 123-4567" 
+                          />
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-1">Location</label>
-                          <Input defaultValue="Boston, MA" className="ride-input" />
+                          <Input 
+                            className="mt-1 w-full" 
+                            type="text" 
+                            defaultValue="New York, NY" 
+                          />
                         </div>
                       </div>
                       

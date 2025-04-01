@@ -1,10 +1,10 @@
 
-import { Shield, Zap, Calendar, Dollar, MapPin, Wheelchair } from "lucide-react";
+import { Shield, Zap, Calendar, DollarSign, MapPin, Accessibility } from "lucide-react";
 
 const BenefitsSection = () => {
   const benefits = [
     {
-      icon: <Dollar className="h-6 w-6 text-ride-primary" />,
+      icon: <DollarSign className="h-6 w-6 text-ride-primary" />,
       title: "Free to Use",
       description: "No commission fees - we're supported by partnerships and advertising"
     },
@@ -29,7 +29,7 @@ const BenefitsSection = () => {
       description: "See your driver's location in real-time during the trip"
     },
     {
-      icon: <Wheelchair className="h-6 w-6 text-ride-primary" />,
+      icon: <Accessibility className="h-6 w-6 text-ride-primary" />,
       title: "Accessibility Options",
       description: "Filter for rides with accommodations for disabilities"
     }
